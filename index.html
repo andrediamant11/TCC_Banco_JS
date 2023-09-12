@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/852f5bd858.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <title>Fast Juice</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <i class="fa-light fa-grapes" style="color: black"></i>
+        <nav>
+          <ul>
+            <li>
+              <a href="#pagina-inicial" class="cta">
+                <span class="underline">Página inicial</span>
+              </a>
+            </li>
+            <li>
+              <a href="#cardapio" class="cta">
+                <span class="underline">Cardápio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#sobre-nos" class="cta">
+                <span class="underline">Sobre nós</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contato" class="cta">
+                <span class="underline">Contato</span>
+              </a>
+            </li>
+            <li>
+              <a href="#graficos" class="cta">
+                <span class="underline">Graficos</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="conteudo">
+        <main>
+          <div id="pagina-inicial">
+            <h1>Um novo jeito de fazer suco</h1>
+            <p>
+              Descubra o Fast Juice, a máquina revolucionária que torna o
+              preparo de sucos frescos e saudáveis mais fácil do que nunca. Com
+              um simples toque, extraia o máximo de nutrientes e sabores das
+              frutas e vegetais, personalizando seu suco de acordo com suas
+              preferências. Desfrute de uma experiência refrescante e nutritiva
+              com o Juice Maker, o novo jeito de fazer suco.
+            </p>
+          </div>
+          <div id="cardapio">
+            <h1>Cardápio</h1>
+            <div class="container-product">
+              <div class="product">
+                <div class="image">
+                  <img src="./juice-icon.svg" alt="foto do suco" />
+                </div>
+                <div class="suco">
+                  <h2>Suco de Uva</h2>
+                  <h3>$5</h3>
+                  <p class="descricao"></p>
+                  <button class="comprar1">Comprar</button>
+                </div>
+              </div>
+              <div class="product">
+                <div class="image">
+                  <img src="./juice-icon.svg" alt="foto do suco" />
+                </div>
+                <div class="suco">
+                  <h2>Suco de Limao</h2>
+                  <h3>$5</h3>
+                  <p class="descricao"></p>
+                  <button class="comprar2">Comprar</button>
+                </div>
+              </div>
+              <div class="product">
+                <div class="image">
+                  <img src="./juice-icon.svg" alt="foto do suco" />
+                </div>
+                <div class="suco">
+                  <h2>Suco de Laranja</h2>
+                  <h3>$5</h3>
+                  <p class="descricao"></p>
+                  <button class="comprar3">Comprar</button>
+                </div>
+              </div>
+              <div class="product">
+                <div class="image">
+                  <img src="./juice-icon.svg" alt="foto do suco" />
+                </div>
+                <div class="suco">
+                  <h2>Suco de Abacaxi</h2>
+                  <h3>$5</h3>
+                  <p class="descricao"></p>
+                  <button class="comprar3">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sobre-nos">
+            <h1>Nossa Equipe</h1>
+            <div class="container-card">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./Kaique.jpeg" />
+                </div>
+                <div class="category">Kaique Bueno</div>
+                <div class="heading">Desenvolvedor Web</div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="./Andre.jpeg" />
+                </div>
+                <div class="category">Andre Diamant</div>
+                <div class="heading">Desenvolvedor Arduino</div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="./Perci.jpeg" />
+                </div>
+                <div class="category">Rodrigo Percicot</div>
+                <div class="heading">Desenvolvedor Arduino</div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="./Douglas.jpeg" />
+                </div>
+                <div class="category">Douglas</div>
+                <div class="heading">Gestor de Equipe</div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="./Zezinho.jpeg" />
+                </div>
+                <div class="category">Felipe Jose</div>
+                <div class="heading">Estrutura e Engenharia</div>
+              </div>
+            </div>
+          </div>
+          <div id="graficos">
+            <div id="grafico" style="width: 100%; height: 100vh"></div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        <div>
+          <p>Deseja fazer um pedido? Venha conhecer o nosso cardápio:</p>
+        </div>
+        <div class="center-btn">
+          <a href="#cardapio">
+            <button class="btn-footer">Cardápio</button>
+          </a>
+        </div>
+        <p>@ Kaique Bueno | 2023</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  /* Coloque aqui os estilos específicos para dispositivos móveis */
+}
+
+/* Estilos para computadores */
+@media screen and (min-width: 1024px) {
+  /* Coloque aqui os estilos específicos para computadores */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  h1 {
+    color: #1d1856;
+    overflow-y: hidden;
+  }
+  p {
+    overflow: hidden;
+  }
+  body {
+    background-color: #f4f4f4;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 1.3em;
+    padding: 1em;
+    background: rgb(29, 24, 86);
+    background: linear-gradient(
+      90deg,
+      rgba(29, 24, 86, 1) 0%,
+      rgba(90, 73, 149, 1) 100%
+    );
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    gap: 1.5em;
+  }
+  li {
+    font-size: 1em;
+    list-style: none;
+  }
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  .card {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #1d1856;
+    font-size: 0.8em;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .card::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -2em;
+    left: 0;
+    width: 100%;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #1d1856;
+    font-size: 0.8em;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+  }
+  .card:hover::after {
+    transform: translateY(0);
+  }
+  .grupo {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    overflow-y: hidden;
+  }
+  #sobre-nos h1 {
+    font-size: 4em;
+    overflow-y: hidden;
+    padding: 0.5em;
+  }
+  #sobre-nos {
+    padding: 1em;
+  }
+  #pagina-inicial,
+  #sobre-nos,
+  #cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 1em;
+    border: 1px solid black;
+  }
+  #contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 0 1em;
+    border: 1px solid black;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    padding: 0 1em;
+    border: 1px solid black;
+  }
+  #pagina-inicial h1 {
+    font-size: 4em;
+    padding: 0;
+  }
+  #pagina-inicial p {
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+  }
+  .container-product {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-card {
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  /*  */
+
+  .card {
+    width: 10em;
+    height: 15em;
+    background: linear-gradient(
+      90deg,
+      rgba(29, 24, 86, 1) 0%,
+      rgba(90, 73, 149, 1) 100%
+    );
+    padding: 0.4em;
+    border-radius: 6px;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+
+  .category {
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    padding: 1em 0.7em 0;
+    text-align: center;
+  }
+
+  .category:hover {
+    cursor: auto;
+  }
+
+  .heading {
+    font-weight: 600;
+    color: white;
+    padding: 7px;
+    text-align: center;
+  }
+
+  .name {
+    font-weight: 600;
+  }
+
+  .name:hover {
+    cursor: auto;
+  }
+  .container-product {
+    gap: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 15em;
+    width: 12em;
+    box-sizing: border-box; /*travar tamanho*/
+  }
+
+  .product img {
+    height: 8em;
+    width: 8em;
+    object-fit: contain;
+    border-radius: 50%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  .image {
+    padding: 1em;
+  }
+
+  .comprar.confirmacao,
+  .recusar {
+    background-color: green;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.1em;
+  }
+
+  .recusar {
+    background-color: red;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
